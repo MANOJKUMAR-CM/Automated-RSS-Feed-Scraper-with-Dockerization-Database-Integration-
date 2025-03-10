@@ -39,3 +39,49 @@ Each article is stored as a tuple with the following fields:
 │── 📜 init.sh                 # Database initialization and schema setup  
 │── 📜 README.md               # Project documentation (this file)  
 ```
+
+## 🏗️ Setup & Execution
+
+### 1️⃣ **Start Docker Desktop**
+Ensure Docker is running before executing the commands.
+
+### 2️⃣ **Build & Run Services**
+- Run the following command to build and start the containers:
+``` sh
+docker-compose up --build -d
+```
+### 3️⃣ **Verify Running Containers**
+- Check if the containers are running successfully
+``` sh
+docker ps
+```
+- Example output:
+``` sh
+CONTAINER ID   IMAGE                     STATUS                    PORTS                    NAMES
+a7870a1100e4   assignment4-rss_scraper   Up 8 seconds                                       rss_scraper
+cfebee72340d   postgres:latest           Up 14 seconds (healthy)   0.0.0.0:5432->5432/tcp   news_rssFeed_db
+```
+### 4️⃣ **Check Logs**
+- Monitor logs for debugging and information:
+``` sh
+docker logs news_rssFeed_db
+docker logs rss_scraper
+```
+### 🛠️ To Stop the Services
+- Stop all containers:
+``` sh
+docker-compose down
+```
+
+---
+
+## 📧 Contact  
+
+If you have questions, suggestions, or just want to connect, feel free to reach out!  
+
+- **Name**: Manoj Kumar.CM  
+- **Email**: [manoj.kumar@dsai.iitm.ac.in]  
+- **GitHub Profile**: [Manoj Kumar C M](https://github.com/MANOJKUMAR-CM)  
+
+Happy coding! 🚀
+
