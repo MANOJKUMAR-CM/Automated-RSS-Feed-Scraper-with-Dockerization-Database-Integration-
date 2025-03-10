@@ -28,14 +28,14 @@ Each article is stored as a tuple with the following fields:
 
 ---
 
-📁 RSS Feed Scraper
-│── 📜 docker-compose.yml        # Defines multi-container setup
-│── 📜 Dockerfile                # Builds the RSS scraper image
-│── 📜 scraper.py                # Python script for scraping RSS feeds
-│── 📜 requirements.txt          # Python dependencies
-│── 📜 init.sh                   # Database initialization script
-│── 📜 README.md                 # Project documentation (this file)
+## 📁 Project Structure  
 
-
-
-
+```bash
+📁 RSS Feed Scraper  
+│── 📜 docker-compose.yml      # Defines multi-container setup  
+│── 📜 Dockerfile              # Builds the RSS scraper image  
+│── 📜 scraper.py              # Python script for fetching and storing RSS feeds  
+│── 📜 requirements.txt        # Dependencies for the Python scraper  
+│── 📜 init.sh                 # Database initialization and schema setup  
+│── 📜 README.md               # Project documentation (this file)  
+```
